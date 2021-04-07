@@ -16,7 +16,7 @@ https://www.geek-share.com/detail/2808020859.html<br>
 二.使用Neo4j构建古诗词数据库<br>
 -------
 
-参考资料：
+参考资料：<br>
 https://www.geek-share.com/detail/2808020859.html<br>
 https://blog.csdn.net/likeyou1314918273/article/details/105946179<br>
 https://zhuanlan.zhihu.com/p/61326763<br>
