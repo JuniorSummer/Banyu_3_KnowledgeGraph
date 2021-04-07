@@ -12,3 +12,11 @@ https://www.geek-share.com/detail/2808020859.html<br>
 
 #### 1.关于Neo4j使用LOAD CSV导入失败问题：<br>
 * 要千万注意csv文件一定是要以utf-8编码的<br>
+
+二.使用Neo4j构建古诗词数据库<br>
+-------
+
+参考资料：
+https://www.geek-share.com/detail/2808020859.html<br>
+https://blog.csdn.net/likeyou1314918273/article/details/105946179<br>
+https://zhuanlan.zhihu.com/p/61326763<br>
