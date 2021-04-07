@@ -21,7 +21,8 @@ def query(content):
     # 构造 _Element 对象
     html = etree.HTML(text)
     # 使用 xpath 匹配数据，得到匹配字符串列表，感觉还是Xpath最方便啊
-    sen_list = html.xpath('//div[contains(@class,"lemma-summary") or contains(@class,"para")]//text()')
+    # 这就是全文核心，这个格式让要找的东西非常清晰，非常舒服
+    sen_list = html.xpath('//div[contains(@class,"lemma-summary") or contains(@class,"para")]//text()') 
     # 过滤数据，去掉空白
     sen_list_after_filter = [item.strip('\n') for item in sen_list]
     # 将字符串列表连成字符串并返回
