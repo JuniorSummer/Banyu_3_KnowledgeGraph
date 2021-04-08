@@ -14,9 +14,9 @@ https://www.geek-share.com/detail/2808020859.html<br>
 -------
 
 觉得使用表格太多，想只通过一个csv表格来实现节点以及相互关系的构建，故重新爬取古诗词、对应作者、对应朝代的关系。但是在导入完数据后，出现了只能查询古诗而不能查询作者的问题，即<br>
-MATCH (a:author)-[:作者]->(b:poem {poem_name:'陋室铭'}) RETURN a,b 
+MATCH (a:author)-[:作者]->(b:poem {poem_name:'陋室铭'}) RETURN a,b <br>
 可以查询，但是<br>
-MATCH (a:author {author_name:'苏轼'})-[:作者]->(b:poem) RETURN a,b 
+MATCH (a:author {author_name:'苏轼'})-[:作者]->(b:poem) RETURN a,b <br>
 就不能查询。一下午百思不得其解，后来组长晚上用新爬取下来的csv文件进行关系建立时发现建立失败，这才发现爬取下来的作者后面带了一个“空格”，就是这个空格导致查询不匹配。去掉空格之后重新查询就一切正常了，终于把bug找到了可太舒服了。特此记录，告诉自己以后多注意空格、制表符、回车，这种小东西真是防不胜防！
 
 参考资料：<br>
